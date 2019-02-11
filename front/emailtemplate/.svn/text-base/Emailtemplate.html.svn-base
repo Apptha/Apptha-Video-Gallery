@@ -1,0 +1,48 @@
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style=" background-color: #f7f5f5; padding: 0; margin: 0; ">
+    <tbody><tr>
+            <td style="padding:20px 20px 40px">
+                <table cellspacing="0" cellpadding="0" border="0" align="center" width="620">
+                    <tbody>
+                        <tr>
+                            <td style="padding:30px 0">
+                                <table cellspacing="0" cellpadding="0" border="0">
+                                    <tbody><tr>
+                                            <td width="1" style="background-color:#eceaeb"></td>
+                                            <td style="background-color:#ffffff;padding:0px;border-top:1px solid #eae9e9;border-bottom:1px solid #b2b1b1;border-left:1px solid #d4d2d3;border-right:1px solid #d4d2d3">
+                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                    <tbody><tr>
+                                                            <td>
+                                                                <table cellspacing="0" cellpadding="0" border="0" width="618">
+                                                                    <tbody><tr>
+                                                                            <td width="358">
+                                                                                <p style="font-family:'helvetica neue',helvetica,arial,sans-serif;font-size:14px;color:#211922;line-height:20px;margin:0;padding:10px 20px 0px;">
+                                                                                    {subject} <br> 
+                                                                                     {message}
+                                                                                 </p>
+                                                                            </td>
+                                                                            <td width="140" align="right" style="padding:20px">
+                                                                                <table cellspacing="0" cellpadding="0" border="0">
+                                                                                    <tbody><tr>
+                                                                                            <td height="34" align="center" style="border-radius:6px;background-color:#2C9E63;border:1px solid #2C9E63;white-space:nowrap;min-height:34px">
+                                                                                                <a href="{videourl}" style="background: #2C9E63;border: #2C9E63 1px solid;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;padding: 8px 35px 6px;color: white;text-shadow: 1px 1px #333;font-weight: bold;font-size: 16px;cursor: pointer; display: block;float: right;font-family: arial;text-decoration: none;" title="Click here to view video" target="_blank">
+                                                                                                    View Video
+                                                                                                </a>
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody></table>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody></table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody></table>
+                                            </td>
+                                            <td width="1" style="background-color:#eceaeb"></td>
+                                        </tr>
+                                    </tbody></table>
+                            </td>
+                        </tr>
+                    </tbody></table>
+            </td>
+        </tr>
+    </tbody></table>

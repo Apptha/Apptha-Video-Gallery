@@ -1,0 +1,56 @@
+/**
+ * Skins css file
+ * @category   Apptha
+ * @package    Contus video Gallery
+ * @version    3.0
+ * @author     Apptha Team <developers@contus.in>
+ * @copyright  Copyright (C) 2015 Apptha. All rights reserved.
+ * @license    GNU General Public License http://www.gnu.org/copyleft/gpl.html 
+ */
+.jcarousel-skin-tango {clear: both;margin-top: 15px;}
+.jcarousel-skin-tango .jcarousel-container {clear: both;}
+.jcarousel-skin-tango .jcarousel-clip-horizontal {    height: 146px;    margin-top: 15px; border-radius: 2px;-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+padding: 5px;
+
+-moz-box-shadow: 0px 0px 3px #999;
+-webkit-box-shadow: 0px 0px 3px #999;
+box-shadow: 0px 0px 3px #999;}
+.jcarousel-skin-tango .vid_info{float: left;clear: both;width:100%;height: 50px}
+.jcarousel-skin-tango .jcarousel-clip-vertical {    width:  80px;    height: auto;    margin-top:15px;}
+.jcarousel-skin-tango .jcarousel-item {width: 130px;
+height: auto;
+margin: 2px 0;}
+.jcarousel-skin-tango .jcarousel-item-horizontal {    margin: 0 11px 0 6px;list-style: none;}
+.jcarousel-skin-tango .jcarousel-item-vertical {    margin-bottom: 10px;}
+.jcarousel-skin-tango .jcarousel-item-placeholder {    background: #fff;    color: #000;}
+.jcarousel-skin-tango .jcarousel-next-horizontal {position: absolute;
+top: 37%;
+right: -1px;
+width: 6px;
+height: 10px;
+cursor: pointer;
+float: right;
+background: url('../images/arrow_right-rel.png') no-repeat center;
+padding: 17px 7px;
+-webkit-border-radius: 2px 0 0 2px;
+-moz-border-radius: 2px 0 0 2px;
+border-radius: 2px 0 0 2px;
+}
+.jcarousel-skin-tango .jcarousel-prev-horizontal {
+position: absolute;
+top: 37%;
+left: -1px;
+width: 6px;
+height: 10px;
+cursor: pointer;
+background: url('../images/arrow_left-rel.png') no-repeat center;
+padding: 17px 7px;
+}
+.jcarousel-skin-tango .jcarousel-next-disabled-horizontal, 
+.jcarousel-skin-tango .jcarousel-prev-disabled-horizontal{
+    opacity: 0.7;
+    filter: alpha(opacity = 50);
+    cursor: default;
+}
+.related-videos .imgSidethumb img{width: 120px; height: 90px;}

@@ -1,0 +1,17 @@
+/**
+ * Plugin css file.
+ * @category   Apptha
+ * @package    Contus video Gallery
+ * @version    3.0
+ * @author     Apptha Team <developers@contus.in>
+ * @copyright  Copyright (C) 2015 Apptha. All rights reserved.
+ * @license    GNU General Public License http://www.gnu.org/copyleft/gpl.html 
+ */
+body{direction: rtl;}
+.imgBorder {float: right !important;}
+.side_video_info {float: right !important;margin-right: 10px;margin-left: 0 !important;}
+.widget .side_video_info .views {float: right !important;}
+.video-page-container h2.related-videos {text-align: right !important;}
+.tablenav-pages {float: left !important;}
+ 
+

@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/1308974/contus-video-gallery/tags/3.0/helper
+END
+s3_config.php
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/!svn/ver/1306767/contus-video-gallery/tags/3.0/helper/s3_config.php
+END
+pluginHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/1306767/contus-video-gallery/tags/3.0/helper/pluginHelper.php
+END
+traithelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/1308974/contus-video-gallery/tags/3.0/helper/traithelper.php
+END
+widgetHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/!svn/ver/1308974/contus-video-gallery/tags/3.0/helper/widgetHelper.php
+END
+pluginMetaHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/!svn/ver/1306767/contus-video-gallery/tags/3.0/helper/pluginMetaHelper.php
+END
+query.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/1306767/contus-video-gallery/tags/3.0/helper/query.php
+END
+s3.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/!svn/ver/1306767/contus-video-gallery/tags/3.0/helper/s3.php
+END
+watchhelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/1308974/contus-video-gallery/tags/3.0/helper/watchhelper.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/!svn/ver/1306767/contus-video-gallery/tags/3.0/helper/index.php
+END
+pluginAdminHelper.php
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/!svn/ver/1306767/contus-video-gallery/tags/3.0/helper/pluginAdminHelper.php
+END
+watch_history.php
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/!svn/ver/1308974/contus-video-gallery/tags/3.0/helper/watch_history.php
+END

@@ -1,0 +1,990 @@
+.bannerContainer {
+  width: inherit;
+  height: inherit;
+  position: relative;
+  overflow:hidden;
+  top:0px;
+  left:0px;
+  height:250px;
+}
+
+.cropContainer {
+	display:block;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:1024px;
+	height:768px;
+	cursor:move;
+}
+.profileDragContainer {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:inherit;
+	height:inherit;
+	background:ghostwhite;
+	cursor:move;
+}
+.profileDragBox {
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:160px;
+	height:160px;
+	background:rgba(244, 244, 249, 0.59);
+	cursor:move;
+	
+}
+span.notificationText{color:#333;}
+.aboutContainer input{border:1px solid #ccc;box-shadow:inherit;}
+.container {
+  width: 100%;
+  //height: 250px;
+  //border: 2px solid ghostwhite;
+}
+
+
+
+.bannerContainer:hover .profileEditor
+{
+	display:block;
+}
+
+.coverContainer {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  display:block;
+  background:#ddd;
+  
+}
+.bannerContainer:hover .coverEditor {
+	display:block;
+}
+.bannerContainer:hover {
+	//background:yellow;
+}
+
+.coverEditor {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor:pointer;
+}
+
+.profileEditor {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor:pointer;
+}
+
+.coverEditor,.profileEditor {
+	display:none;
+}
+
+#dropHeading {
+	margin-top:0 !important;
+}
+.profileImage,.coverImage,.userId {
+	display:none;
+}
+
+
+p.imageUploadButton {
+  //height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 50px;
+  /* /*  font-family: sans-serif; */ */
+  letter-spacing: 3px;
+  color: currentColor;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+  background-color: ghostwhite;
+ 
+}
+
+/*p.saveButton {
+  //height: 50px;
+  vertical-align: middle;
+  text-align: center;
+  box-sizing: border-box;
+  line-height: 50px;
+  /*  font-family: sans-serif; */
+  letter-spacing: 3px;
+  color: currentColor;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+  background-color: ghostwhite;
+
+ 
+}*/
+
+.imageUploadButton span {
+	cursor:pointer;
+}
+
+.profileUpload,.coverUpload {
+	display:none;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:inherit;
+}
+
+p.imageDrop {
+  background: #F8F8FF;
+  //height: 200px;
+  line-height: 200px;;
+  text-align: center;
+  box-sizing: border-box;
+  /* /*  font-family: sans-serif; */ */
+  letter-spacing: 3px;
+  color: currentColor;
+  font-size: 15px;
+  font-weight: bold;
+  border:2px dashed currentColor;
+  margin:0px;
+  
+}
+
+span.closeUploader {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+span.closeUploader {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+.imageUploadButton:hover {
+	color:darkblue;
+}
+
+
+/* new upload container */
+
+.dragContainer,.uploadContainer {
+  border: 1px solid rgb(231, 228, 228);
+  background: rgb(249, 249, 249);
+}
+
+.dragRow,.uploadRow {
+  padding: 0px 0px 10px 0px;
+}
+
+h3,.orText,.imageButtonRow ,.pixelCondition,.dragText,.videoButtonRow {
+  text-align: center;
+  /* font-family: "Open Sans",sans-serif; */
+}
+p.saveButtonRow,.dragButtonRow {
+  /*  font-family: sans-serif; */
+  font-size: 14px;
+  font-weight: bold;
+  text-align:center;
+}
+.orText,.imageButtonRow,.pixelCondition,.dragText,.videoButtonRow {
+
+  color:rgb(108, 108, 108);
+}
+
+span.imageButton,span.videoButton {
+  border: 1px solid rgb(215, 221, 215);
+  display: inline-block;
+  padding: 11px;
+  background: rgb(252, 252, 252);
+  text-align: center;
+  color: rgb(108, 108, 108);
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*span.saveButton {
+  border: 1px solid rgb(215, 221, 215);
+  display: inline-block;
+  padding: 7px;
+  background: rgb(252, 252, 252);
+  text-align: center;
+  color: rgb(108, 108, 108);
+  border-radius: 5px;
+  cursor: pointer;
+  width: 75px;
+  margin-right: 5px;
+}*/
+
+/*span.saveProfileImage {
+  border: 1px solid rgb(215, 221, 215);
+  display: inline-block;
+  padding: 7px;
+  background: rgb(252, 252, 252);
+  text-align: center;
+  color: rgb(108, 108, 108);
+  border-radius: 5px;
+  cursor: pointer;
+  width: 75px;
+  margin-right: 5px;
+}*/
+/*span.cancelButton {
+  border: 1px solid rgb(215, 221, 215);
+  display: inline-block;
+  padding: 7px;
+  background: rgb(252, 252, 252);
+  text-align: center;
+  color: rgb(108, 108, 108);
+  border-radius: 5px;
+  cursor: pointer;
+  width: 75px;
+}*/
+
+.ui {
+	display:none;
+}
+
+p.closeButton,p.videoCloseButton {
+  text-align: right;
+  margin-top: 0;
+ /*  font-family: "Open Sans",sans-serif; */
+  font-weight: bold;
+  font-size: 15px;
+  padding-right: 5px;
+  //padding-top: 5px;
+  margin-bottom: 0;
+}
+p.closeButton span:hover,p.videoCloseButton span:hover
+{
+cursor:pointer;
+color: #0074a2;
+}
+
+.dragBox {
+position:absolute;
+top:0px;
+left:0px;
+width:160px;
+height:160px;
+background:rgba(244, 244, 249, 0.59);
+cursor:move;
+}
+.loadingBar {
+width:0%;
+height:5px;
+background:rgb(250, 118, 87);
+}
+.videoTop input.search {
+  //display: inline-block;
+  //height: 29px;
+  //width: 225px;
+  border: 1px solid rgb(234, 234, 239) !important;
+  padding:6px !important;
+  //background: rgba(250, 250, 252, 0.79);
+  box-shadow: 0px 0px 6px 0px rgb(239, 239, 242) inset;
+}
+.videoTop span.searchButton{font-weight:normal;}
+span.searchButton {
+  display: inline-block;
+  padding: 7px 20px;
+  text-align: center;
+  /*background: rgb(130, 210, 239);*/
+  background:rgb(250, 118, 87);
+  color: white;
+  /* /*  font-family: sans-serif; */ */
+  margin: 5px;
+  cursor:pointer;
+  margin-right: 0px;
+  font-weight: normal;
+}
+span.searchChannelButton {
+  display: inline-block;
+  padding: 7px 10px;
+  text-align: center;
+  /*background: rgb(130, 210, 239);*/
+  background:rgb(250, 118, 87);
+  color: #fff;
+  /* /*  font-family: sans-serif; */ */
+  margin: 5px;
+  cursor:pointer;
+  margin-right: 0px;
+  font-weight: normal;
+}
+.videoTop span.uploadButton{font-weight:normal;}
+span.uploadButton {
+  display: inline-block;
+  padding: 7px 10px;
+  text-align: center;
+  /*background: rgb(130, 210, 239);*/
+  background:rgb(250, 118, 87);
+  color: white;
+ /*  /*  font-family: sans-serif; */ */
+  margin: 5px;
+  cursor:pointer;
+  margin-right: 0px;
+  font-weight: normal;
+}
+span.saveButton {
+  display: inline-block;
+  padding: 7px 10px;
+  text-align: center;
+  /*background: rgb(130, 210, 239);*/
+  background:rgb(250, 118, 87);
+  color: white;
+  /*  font-family: sans-serif; */
+  margin: 5px;
+  cursor:pointer;
+  margin-right: 0px;
+  font-weight: normal;
+}
+span.saveProfileImage {
+  display: inline-block;
+  padding: 7px 10px;
+  text-align: center;
+  /*background: rgb(130, 210, 239);*/
+  background:rgb(250, 118, 87);
+  color: white;
+  /*  font-family: sans-serif; */
+  margin: 5px;
+  cursor:pointer;
+  margin-right: 0px;
+  font-weight: normal;
+}
+span.cancelButton {
+  display: inline-block;
+  padding: 7px 20px;
+  text-align: center;
+  /*background: rgb(130, 210, 239);*/
+  background:rgb(250, 118, 87);
+  color: white;
+  /*  font-family: sans-serif; */
+  margin: 5px;
+  cursor:pointer;
+  margin-right: 0px;
+  font-weight: normal;
+}
+.videoTop span.browseChannelButton{font-weight:normal;}
+span.browseChannelButton {
+  display: inline-block;
+  padding: 7px 15px;
+  text-align: center;
+  background: rgb(250, 118, 87);
+  color: white;
+  /*  font-family: sans-serif; */
+  margin: 5px 0px 0px 2px ;
+  cursor: pointer;
+ 
+  font-weight: normal;
+}
+.subscripeLinkButton {
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+  background: rgb(250, 118, 87);
+  position:absolute;
+  right:4px;
+  color: white;
+  /*  font-family: sans-serif; */
+  margin: 5px;
+  cursor: pointer;
+  margin-right: 0px;
+  font-weight: normal;
+  /* width: 60px; */
+}
+h3.authorHeading {
+  background: rgb(78, 113, 171);
+  margin: 0 !important;
+  padding: 12px !important;
+  color: white !important;
+  text-align: left;
+  padding-left: 7px !important;
+  padding-right: 70px !important;
+  /*  font-family: sans-serif; */
+  font-weight: normal;
+}
+.browseChannelButtonRow {
+	width:100%;
+	text-align:right;
+	margin:10px 0 !important;
+}
+
+span.saveDescription {
+  display: inline-block;
+  padding: 5px 20px;
+  text-align: center;
+  /*background: rgb(130, 210, 239);*/
+  background:rgb(250, 118, 87);
+  color: white;
+  /*  font-family: sans-serif; */
+  margin: 5px;
+  cursor:pointer;
+  margin-right: 0px;
+}
+p.descriptionButtonRow {
+  width: 100%;
+  margin: 0 !important;
+  text-align: right;
+  padding:10px 0;
+}
+textarea.channelDescription {
+  width: 100% !important;
+  height: 100px;
+  border-width: 2;
+  box-shadow: 0px 0px 6px rgb(215, 215, 221) inset;
+  border:none !important;
+}
+span.uploadVideoButton {
+  display: inline-block;
+  padding: 5px 20px;
+  text-align: center;
+  background: rgb(130, 210, 239);
+  color: white;
+  /*  font-family: sans-serif; */
+  margin: 5px;
+  cursor:pointer;
+
+}
+span.deleteNotification {
+  display: inline-block;
+  padding: 0px 10px;
+  text-align: center;
+  background: rgb(250, 118, 87);
+  color: white;
+  /*  font-family: sans-serif; */
+  margin: 5px;
+  cursor:pointer;
+
+}
+span.cancelNotification {
+  display: inline-block;
+  padding: 0px 10px;
+  text-align: center;
+  background: rgb(250, 118, 87);
+  color: white;
+  /*  font-family: sans-serif; */
+  margin: 5px;
+  cursor:pointer;
+
+}
+.subscripeContent a
+{
+	text-decoration:none !important;
+	cursor:default;
+}
+..subscripeContent span {
+	cursor:pointer !important;
+}
+.videoTop {
+  margin: 0 auto;
+  /* width: 40%; */
+  text-align: left;
+  padding-left:4px !important;
+  margin-top: 5px;
+  margin-bottom:5px;
+}
+.videoTopContainer {
+  //border: 1px solid rgb(237, 237, 237);
+  //padding-top: 10px;
+  //padding-bottom: 10px;
+  margin-bottom: 15px;
+  //margin-top: 10px;
+}
+.videoContainer {
+  padding-bottom: 10px;
+  float: left;
+  width: 100%;
+  padding-left: 0px;
+}
+.aboutContainer {
+  padding-bottom: 10px;
+  float: left;
+  width: 100%;
+}
+span.videoCount {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  position:relative;
+  right:6px;
+}
+span.videoRate {
+  display: inline-block;
+  width: 60px;
+  height: 11px;
+  /*background-image:url('http://localhost/videotalent/components/com_contushdvideoshare/videos/star.png');*/
+  background-repeat: no-repeat;
+  margin-left:5px;
+}
+p.videoCategory {
+  margin: 0px;
+  padding-left:5px !important;
+}
+.videoTitle {
+  text-decoration: none;
+  padding-left:5px !important;
+}
+.videoTitle {
+  margin:0px;
+  text-align:left !important;
+}
+.thumbImage {
+  //border: 1px solid green;
+  width: inherit;
+  height: 100px;
+  display: inline-block;
+}
+
+.channelContentContainer {
+ // border: 1px solid rgb(237, 237, 237);
+  margin-top: 10px;
+  padding-left: 5px;
+}
+.uploadContainer {
+	margin-top:10px;
+}
+.playerContainer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background:rgba(47, 45, 45, 0.79);
+  display:none;
+}
+
+span.playerCloseButton {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  z-index: 100;
+  cursor:pointer;
+}
+.thumbImage {
+	cursor:pointer;
+}
+
+.channelMenuContainer p {
+  border: 1px solid ghostwhite;
+  padding: 5px;
+  margin: 0 !important;
+  background: rgb(252, 193, 179);
+  /*  font-family: sans-serif; */
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+  position: relative;
+  left: 0px;
+  //color: rgb(89, 85, 85);
+  font-weight: bold;
+  font-size: 13px;
+}
+.channelMenuContainer p:hover {
+  background: rgb(250, 118, 87) !important;
+  position:relative;
+  left:0px !important;	
+  color:white !important;
+}
+p.novideostext {
+  border: 1px solid rgb(229, 229, 239);
+  padding: 10px;
+  text-align: center !important;
+  /*font-family: sans-serif !important;*/
+  font-weight: normal;
+}
+
+h3.descriptionHeading {
+  text-align: left !important;
+  font-size:14px!important;
+  color: rgb(250, 118, 87) !important;
+  font-weight: normal !important;
+}
+textarea.channelDescription {
+  width: 99% !important;
+  height: 100px;
+  border-width: 2;
+  box-shadow: 0px 0px 6px rgb(215, 215, 221) inset;
+  border: none !important;
+  font-size: 14px !important;
+  font-family: 'Oswald' ;
+  font-weight:100;
+  color:#7b7878!important;
+  letter-spacing:1px;
+}
+
+
+.subscripRow {
+  border:1px solid rgb(229, 229, 229);
+  position: relative;
+  margin-bottom: 5px;
+  padding: 5px 0px;
+  padding-left: 5px;
+  background: ghostwhite;
+}
+.subscripeImage {
+    //border:1px solid green;
+    width:160px;
+    height:160px;
+    float:left;
+    margin-right:5px;
+}
+.subscripeContent {
+  //border: 1px solid yellow;
+  float: left;
+  width: 64%;
+}
+.subscripeLink {
+    position:absolute;
+    top:0px;
+    right:0px;
+    width:77px;
+    height:50px;
+    //border:1px solid blue;
+}
+h3.mysubscripeTitle {
+  margin: 10px 0px !important;
+  text-align: left;
+  /*  font-family: sans-serif; */
+  color:rgb(250, 118, 87) !important;
+}
+.closeSubscripe {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+h3.subscripeTitle {
+  margin: 0 !important;
+  background: rgb(252, 193, 179);
+  border: none !important;
+  box-sizing: border-box;
+  color: rgb(71, 68, 68) !important;
+  overflow: hidden;
+  padding:10px 3px!important;
+  text-align: center; 
+}
+
+p.subscripeDescription {
+  font-size: 14px;
+  font-weight: 100;
+  color: #615C5C;
+  letter-spacing: 0.5px;
+}
+.mysubscriptionContainer {
+  width: 100%;
+  float: left;
+ 
+}
+.mysubscriptionRow {
+  width: 100%;
+}
+
+.mysubscription {
+  width: 160px;
+  height: 200px;
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px !important;
+  border: 1px solid rgb(229, 229, 234);
+  //padding-left: 5px;
+}
+.notificationContainer {
+  width: 82%;
+  border: 1px solid rgb(221, 221, 224);
+  float: left;
+}
+
+.notificationRow {
+
+}
+/*span.ncount {
+  display: inline-block;
+  padding: 3px;
+  border-radius: 10px;
+  background: rgb(250, 118, 87);
+  font-size: 13px;
+  color: white;
+  position: absolute;
+  top: 1px;
+  right: 0px;
+}*/
+/*.notifi {
+  padding: 3px;
+  position: relative;
+  cursor:pointer;
+}*/
+
+/* temporary style */
+
+.user_profile_name {
+	position:relative;
+}
+.notificationContainers {
+	margin:0;
+	padding:0;
+	list-style-type:none !important;
+}
+
+.notifi {
+  padding: 3px;
+  position: absolute;
+  cursor: pointer;
+  width: 36px;
+  height: 34px;
+  top:6px;
+  right:12px;
+  /* text-align: right; */
+}
+
+span.ncount {
+  display: inline-block;
+  /* border: 1px solid red; */
+  padding: 3px;
+  /* border-radius: 150px; */
+  background: rgb(250, 118, 87);
+  font-size: 13px;
+  color: white;
+  position: absolute;
+  top: 1px;
+  right: -10px;
+  width:auto;
+  height:14px;
+  padding:2px 4px;
+  /* text-align: right; */
+}
+
+.notificationContainers {
+  border: 1px solid rgb(218, 218, 219);
+  position: absolute;
+  right: -9px;
+  top: 40px;
+  z-index: 1000;
+  background: ghostwhite;
+}
+
+span.notificationText {
+  display: inline-block;
+  padding: 5px;
+}
+
+.seeMoreLink {
+  text-align: center;
+  /*  font-family: sans-serif; */
+  padding: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(250, 118, 87);
+}
+
+li.notificationLis {
+  padding: 6px;
+  /*  font-family: sans-serif; */
+  font-size: 12px;
+  font-weight: bold;
+  border-bottom:1px solid rgb(218, 218, 219);
+  position:relative;
+  top:0px;
+  left:0px;
+}
+
+.subscripeText {
+	display:block;
+	margin-top:5px;
+}
+p.notButtonRow {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+span.subButton,span.subDeleteButton {
+  display: inline-block;
+  padding: 0px 10px;
+  text-align: center;
+  /*background: rgb(130, 210, 239);*/
+  background:rgb(250, 118, 87);
+  color: white;
+  /*  font-family: sans-serif; */
+  margin: 5px;
+  cursor:pointer;
+  margin-right: 0px;
+  font-weight: normal;
+}
+
+/* temporary style end */
+li.notificationLi {
+  padding: 6px;
+  /*  font-family: sans-serif; */
+  font-size: 12px;
+  font-weight: bold;
+  border-bottom:1px solid rgb(218, 218, 219);
+  position:relative;
+  top:0px;
+  left:0px;
+}
+
+li.notificationLi a {
+  /*  font-family: sans-serif; */
+  font-size: 14px;
+  font-weight: normal;
+  color: rgb(129, 126, 125);
+}
+.videoRow span.videoCount {
+    position: absolute;
+    bottom: 0px;
+    right: 1px;
+}
+
+.videoRow .watchContentRate {
+    position: absolute;
+    bottom: 0px;
+    left: 2px;
+}
+.videoRow {
+	position:relative;
+}
+/* stylesheet*/
+
+.channel_dragreposition{position:absolute;  top: 45%;left: 40%;pointer-events:none;}
+.channel_dragreposition p{color: #fff;font-size: 16px;letter-spacing: 0.5px;}
+.channel_profile_text{text-align: center;line-height: 160px;font-size:16px;color:#fff;}
+.profileContainer {position: absolute;top: 10px;display:block;background: inherit;left:10px;border:2px solid #fff;}
+
+
+@media screen and (min-width:1025px)
+{
+	
+	.videoRow {border: 2px solid rgb(226, 226, 229);height:190px;width: 145px;float:left;margin-right:4px;margin-bottom:10px;}
+	.channelMenuContainer {  width: 100%;float: left;margin-right: 0px;clear: both;margin-bottom:10px;}
+	.channelMenuContainer p {left:0!important;float:left;  padding: 6px 20px;margin: 0 10px 0 0!important;font-weight:normal}
+	.videoRow .thumbImage img{width:141px!important;}
+	.videoRow .videoTitle{  font-size: 14px!important;color: #FA7657!important;margin:0!important;}
+	.mysubscription h3.subscripeTitle{text-overflow: ellipsis;white-space: nowrap;font-size:14px!important}
+	
+	.subscripeLinkButton{position:absolute;right:4px;}
+	.subscripeContainer {width: 100%;float: left;}
+	
+	.notificationRows {width: 392px;overflow: hidden;}
+	.player {margin: 2px;width: 800px;height: 500px;margin: auto;position: absolute;top: 0px;left: 0px;right: 0px;bottom: 0px;background:white;padding:7px;}
+	.profileContainer {width: 160px!important;height: 164px!important;}
+
+}
+.profileContainer .profileImages {
+	width:160px !important;
+	height:160px !important;
+}
+	
+@media screen and (min-width:769px) and (max-width:1024px)
+{
+	.videoRow {border: 2px solid rgb(226, 226, 229);height:190px;width: 161px;float:left;margin-right:4px;margin-bottom:10px;}
+	.channelMenuContainer {  width: 100%;float: left;margin-right: 0px;clear: both;margin-bottom:10px;}
+	.channelMenuContainer p {left:0!important;float:left;  padding: 6px 20px;margin: 0 10px 0 0!important;font-weight:normal}
+	.videoRow .thumbImage img{width:161px!important;}
+	span.videoCount{position:relative;right:10px;}
+	.videoRow .videoTitle{  font-size: 14px!important;color: #FA7657!important;margin:0!important;}
+	.mysubscription h3.subscripeTitle{text-overflow: ellipsis;white-space: nowrap;font-size:14px!important}
+	
+	.subscripeLinkButton{position:absolute;right:4px;}
+	.subscripeContainer {width: 100%;float: left;}
+	
+	.notificationRows {width: 392px;overflow: hidden;}
+	.player {margin: 2px;width:90%!important;height: 400px!important;margin: auto;position: absolute;left: 0px;right: 0px;background:white;padding:7px;}
+	.profileContainer {width: 104px!important;height: 104px!important;}
+}
+	
+@media screen and (min-width:481px) and (max-width:768px)
+{
+	
+	.videoRow {border: 2px solid rgb(226, 226, 229);height:190px;width: 161px;float:left;margin-right:4px;margin-bottom:10px;}
+	.channelMenuContainer {  width: 100%;float: left;margin-right: 0px;clear: both;margin-bottom:10px;}
+	.channelMenuContainer p {left:0!important;float:left;  padding: 6px 20px;margin: 0 10px 0 0!important;font-weight:normal}
+	.videoRow .thumbImage img{width:161px!important;}
+	span.videoCount{position:relative;right:10px;}
+	.videoRow .videoTitle{  font-size: 14px!important;color: #FA7657!important;margin:0!important;}
+	.mysubscription h3.subscripeTitle{text-overflow: ellipsis;white-space: nowrap;font-size:14px!important}
+	
+	.subscripeLinkButton{position:absolute;right:4px;}
+	.subscripeContainer {width: 100%;float: left;}
+	
+	.notificationRows {width: 392px;overflow: hidden;}
+	.player {margin: 2px;width: 90%!important;height: 300px!important;margin: auto;position: absolute;left: 0px;right: 0px;top:14px;background:white;padding:7px;}
+	.profileContainer {width: 104px!important;height: 104px!important;}
+}
+@media screen and (min-width:320px) and (max-width:480px)
+{
+	
+	.videoRow {border: 2px solid rgb(226, 226, 229);height:190px;width: 161px;float:left;margin-right:4px;margin-bottom:10px;}
+	.channelMenuContainer {  width: 100%;float: left;margin-right: 0px;clear: both;margin-bottom:10px;}
+	.channelMenuContainer p {left:0!important;float:left;  padding: 6px 20px;margin: 0 10px 0 0!important;font-weight:normal}
+	.videoRow .thumbImage img{width:161px!important;}
+	span.videoCount{position:relative;right:10px;}
+	.videoRow .videoTitle{  font-size: 14px!important;color: #FA7657!important;margin:0!important;}
+	.mysubscription h3.subscripeTitle{text-overflow: ellipsis;white-space: nowrap;font-size:14px!important}
+	
+	.subscripeLinkButton{position:absolute;right:4px;}
+	.subscripeContainer {width: 100%;float: left;}
+	.notificationRows {width: 300px;overflow: hidden;}
+	.player {margin: 2px;width: 90%!important;height: 300px!important;margin: auto;position: absolute;left: 0px;right: 0px;top:14px;background:white;padding:7px;}
+	.profileContainer {width: 104px!important;height: 104px!important;}
+}
+
+
+
+
+span.ncount{height: 19px;}
+span.ncount span{line-height: 14px;display: block;}
+.notifi.notificationsection .notificationRows ul{padding:0;}
+.notifi.notificationsection .notificationRows ul li{diplay:inline-block;}
+span.searchButton, span.searchChannelButton, span.uploadButton,span.browseChannelButton{    background: #f8f8f8;
+    border: solid 1px #d3d3d3;
+    padding: 6px 9px;
+    color: #333;
+    font-size: 13px;
+    margin-right: 5px;
+    border-radius: 2px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    vertical-align: top;
+    float: none;
+    margin-top: 0;}
+span.searchButton:hover, span.searchChannelButton:hover, span.uploadButton:hover,span.browseChannelButton:hover{border-color: #c6c6c6;background: #f0f0f0; box-shadow: 0 1px 0 rgba(0, 0, 0, 0.10);}
+.entry-content a,.entry-content a:hover{color:#fff;text-decoration:none;border-bottom: none;}
+.channelMenuContainer p{background:#4e71ab !important;color:#fff !important;}
+.channelMenuContainer p:hover{background:#4e71ab !important;}
+.entry-meta a,.entry-meta a:hover {color: #0073aa;    }
+.profileContainer{    height: 160px!important;    overflow: hidden;}
+h3.subscripeTitle{background: #666;    color: #fff!important;}
+textarea.channelDescription{    border: 1px solid #ccc !important;    letter-spacing: inherit;    box-shadow: inherit;}
+h3.descriptionHeading{color: #333 !important;}
+span.saveDescription{background:#666;}
+@media screen and (max-width: 1024px) and (min-width: 769px){
+.profileContainer { width: auto!important; height: auto!important;}		
+}
+@media screen and (max-width: 768px) and (min-width: 320px){
+.profileContainer { width: auto!important; height: auto!important;}	
+.videoTop input.search{    margin-right: 5px;}	
+}
+@media screen and (max-width: 650px) and (min-width: 320px){
+span.searchButton, span.searchChannelButton, span.uploadButton,span.browseChannelButton{    display: block;    margin: 5px 0;}
+.videoTop{    width: 100%;}
+.videoTop input.search{width:100%;}
+}
+.notificationRows{width: 275px;}p.notButtonRow{top:0;right:0;}
+h3.mysubscripeTitle{ color: #4e71ab !important;font-size: 16px;}
+.subscripeLink{ width: 100px;}
+.subscripeLinkButton, span.cancelButton, span.saveButton, span.saveProfileImage{ background: #4e71ab none repeat scroll 0 0; font-size: 13px;}
+span.subButton, span.subDeleteButton{background: #4e71ab none repeat scroll 0 0;margin: 5px 0 5px 5px;}
+.notificationParent p.notButtonRow img.subDeleteButton{top: -3px !important;}
+
+
+.notificationRow ul{padding:0;}.notificationRow ul li{list-style:none;margin:0 !important}
+span.cancelNotification, span.deleteNotification{background:#666;}
+ul.notificationParent {
+    list-style-type: none !important;
+    margin: 0 !important;
+}
+.videoRow{height: 150px;border: 1px solid #e2e2e5;}.videoRow .thumbImage{margin-bottom:5px;}.videoRow .videoTitle a{color: #0073aa;    white-space: nowrap;width: 96%;display: block;overflow: hidden;text-overflow: ellipsis;font-size: 12px;}
+.videoTop input.search{margin-bottom:5px;}
+
+
+
